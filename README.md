@@ -7,3 +7,8 @@
   4. Merge to main on Github 
   5. Locally checkout to main (git checkout main)
   6. Pull from Github (git pull)
+
++ 9/1 - Modules
+  + blood_calculator.py & database.py
+  + Learned how to call functions from one into the other
+  + Naming conventions of ^
