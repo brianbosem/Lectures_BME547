@@ -12,3 +12,11 @@
   + blood_calculator.py & database.py
   + Learned how to call functions from one into the other
   + Naming conventions of ^
+
++ 9/6 - Modular Code
+  + Modular code is: 
+    + Reusable
+    + Testable
+    + Readable
+  + Don't want to have one function call another function call another function, it's less repeatable and harder to test/follow.
+  + It's better to have return statements with inputs and outputs, with each function having inputs and outputs to ease testing (separate I/O from calculations, functions with defines arguments & returns)
