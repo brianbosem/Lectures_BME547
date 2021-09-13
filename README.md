@@ -57,3 +57,22 @@
       + Output to the terminal window the calculated BMI 
         + Go online to find the formula for BMI
       + Also output whether BMI is underweight, normal weight, overweight, obese
++ 9/13 Testing
+  + Unit Testing 
+    + To open: Make venv, install using requirements.txt
+      + ```pytest```
+      + ```pytest-pycodestyle```
+    + To make a test function, make a genering python file with prefix *"test__"*
+    + Make function called ```"test__function_name"``` (check out test_blood_calculator.py)
+    + Better to make individual functions for each test rather than put multiple tests into the same function
+    + Can use decorator (@), to run multiple test cases in the same test 
+  + Style Guide
+    + PEP-8 (https://www.python.org/dev/peps/pep-0008/)
+      + Says how to indent code, how to comment, blank lines, etc.
+      + To help code look neat and organized
+      + After BMI, all code will need to meet PEP-8 standards
+      + Can use pytest to catch PEP-8 errors and allow you to fix them
+        + To run, in gitbash do ```pytest -v --pycodestyle```
+  + Test Driven Development
+    + Write unit tests ***BEFORE*** writing code bc you should know what code does/will do before writing it
+    + Allows you to know what kind of input/outputs your function needs before writing it
