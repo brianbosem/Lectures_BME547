@@ -76,3 +76,21 @@
   + Test Driven Development
     + Write unit tests ***BEFORE*** writing code bc you should know what code does/will do before writing it
     + Allows you to know what kind of input/outputs your function needs before writing it
++ 9/15 Robust Testing
+  + Robust Testing
+    + Need to capture different scenarios when creating tests.
+    + Broad set of tests to test different possibilities of inputs. It's why parametrize is useful.
+    + ```units = units.rstrip('s')``` changes "lbs" to "lb"
+      + rstrip only strips it from the right, strip would do it wherever in the string
+    + Can use pytest.approx(answer) to approximate the answer to what's expected. Useful for when using floats in test cases.
+  + Continuous Integration Testing on Github
+    + Can test locally, and locally in Github
+    + In repository, make two directories. First mkdir .github. Next, enter that and mkdir workflows.
+    + Enter that and create a new file by using touch filename.yml
+    + Can make .github/workflow folder on main branch when creating a new repository. 
+      + Along with README.md, requirements.txt, and .gitignore
+  + Unit Testing & Continuous Integration Homework Assignment
+    + Function called ```is_tachycardic``` in module ```tachycardia.py```
+    + Function received a single parameter in a string, which will be a single word
+      + Word may have random capitalization
+    + If contains "tachycardic," it should return True
