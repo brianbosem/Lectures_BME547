@@ -94,3 +94,13 @@
     + Function received a single parameter in a string, which will be a single word
       + Word may have random capitalization
     + If contains "tachycardic," it should return True
++ 9/20 - Dictionaries
+  + Dictionaries
+    + Use {} to access dictionaries, like this: oed = {"day": "when the sun is up", "night": "when the moon is out"}
+    + What goes before the : is the '*key*' and what goes after is the '*value*'
+    + To see what the keys are, call name.keys(). To see values, call name.values()
+    + Easy to add to the dictionary, just type in a new key/value combo like this: oed["lunch"] = "what I will eat after class"
+      + or like this: oed.get("lunch"); this prevents keyerrors for missing keys
+    + Can store strings, ints, lists, etc. as a value in the dictionary
+    + These values are MUTABLE
+    
