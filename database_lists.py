@@ -31,29 +31,33 @@ def print_elders(db, age_limit):
             print(patient[0])
 
 def get_patient(db, id):
-    for patient in db:
-        if patient["id_no"] == id:
-            return patient
+    patient = db[id]
+    return patient
+
+    # for patient in db:
+    #    if patient["id_no"] == id:
+    #        return patient
 
 def main():
-    db = []
+    db = {}
     x = create_database_entry("Ann Ables", 120, 30)
-    db.append(x)
+    db[x["id_no"]] = x
     x = create_database_entry("Bob Boyles", 24, 31)
-    db.append(x)
+    db[x["id_no"]] = x
     x = create_database_entry("Chris Chou", 33, 33)
-    db.append(x)
+    db[x["id_no"]] = x
     x = create_database_entry("David Dinkins", 14, 34)
-    db.append(x)
-    # print(db)
+    db[x["id_no"]] = x
+    print(db)
 
     patient_id_tested = 24
     test_done = ("HDL", 65)
 
     patient = get_patient(db, patient_id_tested)
     patient["tests"].append(test_done)
+    print(db)
 
-    print_database5(db)
+    # print_database5(db)
     # y = db[len[db]-1] old way of finding last entry
     # y = db[-1] # python way of finding last entry, can get second to last etc. 
     # y = db[1:3]
