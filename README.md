@@ -103,4 +103,35 @@
       + or like this: oed.get("lunch"); this prevents keyerrors for missing keys
     + Can store strings, ints, lists, etc. as a value in the dictionary
     + These values are MUTABLE
++ 9/22 - Exceptions and Logging
+  + Exceptions
+    + Two types of errors: syntax errors and exceptions
+      + SyntaxError: interpreter doesn't even recognize what the module is trying to do
+      + Exceptions: code runs, but it comes across an error in the code that will stop the program at that line
+    + Types of exceptions:
+      + IndexError (index didn't exist)
+      + AttributesError (use a method on an object that doesn't have that attribute) ```hello.equals()```
+      + ValueError (i.e. convert a string to an int, it's not a number)
+      + TypeError (tried to add a string and a float)
+      + AssertionError (```assert x == y```, if x != y then it's false, and an error)
+      + NameError (wrong variable/function name)
+      + KeyError (dictionary accessed with wrong key, or key doesn't exist)
+      + ZeroDivisionError (can't divide by 0)
+      + ModuleNotFoundError (try to import something that doesn't exist)
+      + Can go to today's class notes on Exceptions and it will give some more examples of errors
+  + Try Except Block (21 minute mark of Panopto lecture)
+    + Tries to do something, looks to see if an error comes up, and executes a block of code in case
+  + Can also load an error for the user when they do something incorrectly
+    + Use an if statement and use ```raise``` with the error type
+    + Can also add a message in the parentheses (```ValueError("message")```) to help the user
+  + Next Homework Assignment: CPAP Analysis Program
+    + Reads in CPAP data, analyzes the results, outputs results in separate output file for different patients
+    + Read in data, must be flexible to handle any number of patients in the file with flexible lengths
+    + Calculate average mask leakage
+    + Calculate average events per hour
+    + Based on the events avg at O2 data, decide 1/4 diagnoses.
+    + Create an output json file 
+      + Should include first name, last name, hours, seal, events, O2, seal average, diagnosis
+      + Output ^ in a dictionary
+
     
