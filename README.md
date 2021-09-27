@@ -133,5 +133,12 @@
     + Create an output json file 
       + Should include first name, last name, hours, seal, events, O2, seal average, diagnosis
       + Output ^ in a dictionary
-
-    
++ 9/27
+  + Logging
+    + Made fibonacci sequence, need to find a way to stop printing
+    + Use python library called logging ```import logging```
+    + Warning function: prints WARNING in front
+    + Multiple levels: debug, info, warning, error, critical  
+      + Default is to show warning and above. Can change by calling ```logging.basicConfig(level = logging.INFO)```
+      + When setting level, use CAPS. When using function, use lower. 
+    + Can save output to a .log file with ```logging.basicConfig(filename="example.log", filemode='w')``` to rewrite log file each time
