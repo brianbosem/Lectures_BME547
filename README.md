@@ -133,7 +133,7 @@
     + Create an output json file 
       + Should include first name, last name, hours, seal, events, O2, seal average, diagnosis
       + Output ^ in a dictionary
-+ 9/27
++ 9/27 - Logging & Numpy/Matplotlib
   + Logging
     + Made fibonacci sequence, need to find a way to stop printing
     + Use python library called logging ```import logging```
@@ -142,3 +142,14 @@
       + Default is to show warning and above. Can change by calling ```logging.basicConfig(level = logging.INFO)```
       + When setting level, use CAPS. When using function, use lower. 
     + Can save output to a .log file with ```logging.basicConfig(filename="example.log", filemode='w')``` to rewrite log file each time
++ 9/29 - ECG
+  + ECG Assignment
+    + PQRS signal
+    + ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/1200px-SinusRhythmLabels.svg.png "Logo Title Text 1")
+    + Given data files that's a list of times and voltages (.csv comma separated text file)
+      + First column is time in seconds, second column in voltage in mV.
+    + Read in file
+    + Perform calculations like: duration, find voltage max/min, number of heartbeats, average heart rate, list of times when beats occured
+    + The above metrics should be stored as a dictionary and output as a .json file with the same name as the input file
+    + There are directions for the README.md that are necessary for explaining how the code/algorithms work
+  + 
