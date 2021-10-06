@@ -152,4 +152,22 @@
     + Perform calculations like: duration, find voltage max/min, number of heartbeats, average heart rate, list of times when beats occured
     + The above metrics should be stored as a dictionary and output as a .json file with the same name as the input file
     + There are directions for the README.md that are necessary for explaining how the code/algorithms work
-  + 
++ 10/6 - Debugging & IDEs
+  + Debugging
+    + Code not behaving as expected, want to figure out why.
+      + Print statements
+      + Go through line-by-line
+      + Can make logs
+      + Make test cases
+    + Make a new branch before debugging
+    + Step over runs the function and continues through. Good to help with analysis to see which function creates the unexpected output.
+    + Step into actually goes into that function and goes to the next line that will execute. 
+    + Good flow is to step over, and then see if it created the bad results. 
+      + If so, then redo and step into
+      + If not, continue
+    + Can keep track of variables on the side, check to make sure things are what they're expected to be
+  + Debugging Approaches & Rules of Thumb
+    + Understand the bug
+    + Reproduce your bug
+    + Examine your assumptions
+    + Determine the location of the error/fault
