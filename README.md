@@ -186,21 +186,24 @@
         + Which functions are exposed to the user
         + How to ensure API functions are flexible enough to be "stable" for some amount of time 
         + Platform independence 
-    + Web Services
-      + Modern software design uses cloud computing
-      + RESTful APIs: **RE**presentational **S**tate **T**ransfer
-        + Instead of installing packages onto our local computers, we call RESTful APIs to call functionality in the cloud
-      + **URL**: Uniform resource locator. URLs can be thought of as function names to access functionality on a server.
-        + http://vcm-7631-vm.duke.edu:5000/sum
-        + Protocol for transfer (http)
-        + Domain name (duke.edu)
-        + Sub-domain name (vcm-7631-vm)
-        + Port (5000)
-        + Path/Route (sum)
-      + **Client**: Computer or local software that wants to share information with web server or service
-      + **Web server or service**: program running on separate machine
-      + **Reqest**: sent from client to server to access
-      + **Response**: sent from server to client
-    + Requests
-      + ***GET***: generally used to get information from a server
-      + ***POST***: Generally used to send info to server and perhaps receive something, used for data storage
+  + Web Services
+    + Modern software design uses cloud computing
+    + RESTful APIs: **RE**presentational **S**tate **T**ransfer
+      + Instead of installing packages onto our local computers, we call RESTful APIs to call functionality in the cloud
+    + **URL**: Uniform resource locator. URLs can be thought of as function names to access functionality on a server.
+      + http://vcm-7631-vm.duke.edu:5000/sum
+      + Protocol for transfer (http)
+      + Domain name (duke.edu)
+      + Sub-domain name (vcm-7631-vm)
+      + Port (5000)
+      + Path/Route (sum)
+    + **Client**: Computer or local software that wants to share information with web server or service
+    + **Web server or service**: program running on separate machine
+    + **Reqest**: sent from client to server to access
+    + **Response**: sent from server to client
+  + Requests
+    + ***GET***: generally used to get information from a server
+    + ***POST***: Generally used to send info to server and perhaps receive something, used for data storage
+  + Actual work for today:
+    + Add ```requests``` to requirements.txt 
+    + Work done in ```github_access.py```
