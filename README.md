@@ -171,3 +171,39 @@
     + Reproduce your bug
     + Examine your assumptions
     + Determine the location of the error/fault
++ 10/11 - APIs, Intro to Web Services, Requests
+  + APIs (Applicable Programming Interface)
+    + Physical example: microwave
+      + Interact with it by pressing buttons on the control panel (input)
+      + Receive some result on the digital display (output)
+      + When start is pressed, microwave does a ton of functions:
+        + Is door closed? Turn on light. Turn on microwave generator. Start timer. Rotate platform. Turn off microwave generator. Beep.
+    + Software example: SciPy
+      + Call an "exposed" function that then calls hidden underlying functions that access the functionality of the package.
+    + Designing an API
+      + Keystones of APIs are functions.
+      + As an API designer, need to consider:
+        + Which functions are exposed to the user
+        + How to ensure API functions are flexible enough to be "stable" for some amount of time 
+        + Platform independence 
+  + Web Services
+    + Modern software design uses cloud computing
+    + RESTful APIs: **RE**presentational **S**tate **T**ransfer
+      + Instead of installing packages onto our local computers, we call RESTful APIs to call functionality in the cloud
+    + **URL**: Uniform resource locator. URLs can be thought of as function names to access functionality on a server.
+      + http://vcm-7631-vm.duke.edu:5000/sum
+      + Protocol for transfer (http)
+      + Domain name (duke.edu)
+      + Sub-domain name (vcm-7631-vm)
+      + Port (5000)
+      + Path/Route (sum)
+    + **Client**: Computer or local software that wants to share information with web server or service
+    + **Web server or service**: program running on separate machine
+    + **Reqest**: sent from client to server to access
+    + **Response**: sent from server to client
+  + Requests
+    + ***GET***: generally used to get information from a server
+    + ***POST***: Generally used to send info to server and perhaps receive something, used for data storage
+  + Actual work for today:
+    + Add ```requests``` to requirements.txt 
+    + Work done in ```github_access.py```
