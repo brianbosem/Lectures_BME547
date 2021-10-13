@@ -207,3 +207,7 @@
   + Actual work for today:
     + Add ```requests``` to requirements.txt 
     + Work done in ```github_access.py```
++ 10/13 - Web Servers
+  + Flask - a Python package that allows us to create a web service/server that can expose a RESTful API
+    + First need to install ```flask``` into virtual environment
+    + ```Flask, request``` is different from ```requests```

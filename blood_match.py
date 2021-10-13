@@ -14,14 +14,14 @@ recipient_bloodtype = requests.get(server_name + "get_blood_type/" + recipient_I
 # print(recipient_bloodtype.text)
 
 if donor_bloodtype == recipient_bloodtype:
-    type_match = True
+    type_match = "Yes"
 else:
-    type_match = False
+    type_match = "No"
 print(type_match)
 
-# request_json = {"Name": "bab97", "Match": "No"}
-# r = requests.post(server_name + "match_check", json=request_json)
-# if r.status_code != 200:
-#     print(r.text)
-# else:
-#     print(r.json())
+request_json = {"Name": "bab97", "Match": type_match}
+r = requests.post(server_name + "match_check", json=request_json)
+if r.status_code != 200:
+    print(r.text)
+else:
+    print(r.json())
