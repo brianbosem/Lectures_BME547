@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import logging
 
 # Define variable to contain Flask class for server
 app = Flask(__name__)
@@ -6,7 +7,10 @@ app = Flask(__name__)
 # Create database as an empty list
 db = []
 
+def initialize_server():
+    logging.basicConfig(filename="health_db_server.log", level=logging.DEBUG)
 
+    
 @app.route("/", methods=["GET"])
 def status():
     """Used to indicate that the server is running
@@ -249,4 +253,5 @@ def validate_patient_id(patient_id):
 
 
 if __name__ == '__main__':
+    initialize_server()
     app.run()
