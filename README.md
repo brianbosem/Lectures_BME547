@@ -211,3 +211,5 @@
   + Flask - a Python package that allows us to create a web service/server that can expose a RESTful API
     + First need to install ```flask``` into virtual environment
     + ```Flask, request``` is different from ```requests```
++ 10/18 - Server Design
+  + Need to write code that returns errors to client so they know what to fix
