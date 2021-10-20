@@ -213,3 +213,5 @@
     + ```Flask, request``` is different from ```requests```
 + 10/18 - Server Design
   + Need to write code that returns errors to client so they know what to fix
++ 10/20 - Virtual Machines
+  + Allows other people to access server on your laptop by moving it to a virtual machine instead of your computer.
