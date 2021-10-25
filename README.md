@@ -215,3 +215,12 @@
   + Need to write code that returns errors to client so they know what to fix
 + 10/20 - Virtual Machines
   + Allows other people to access server on your laptop by moving it to a virtual machine instead of your computer.
++ 10/25 - Databases
+  + Relational and non-relational
+    + Relational (SQL) - have a pre-defined structure (schema)
+      + i.e. comes with predefined categories like "Name", "Age", "SSN", etc.
+    + Non-relational (NoSQL) - no pre-defined structure
+      + each entry is an "object"
+      + data is often stored in key-value pairs
+      + Advantages: different objects can have different information, easy to change
+    + We'll use non-relational DB called MongoDB
